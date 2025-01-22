@@ -3,108 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TTRL Rulebook</title>
+    <title>Torque Titans Racing League Rulebook</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             display: flex;
-            min-height: 100vh;
         }
-        #sidebar {
-            background-color: #333;
-            color: white;
+        .sidebar {
             width: 250px;
-            padding: 1rem;
-            overflow-y: auto;
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-right: 1px solid #ddd;
             position: fixed;
             height: 100%;
-        }
-        #sidebar a {
-            color: white;
-            text-decoration: none;
-            display: block;
-            margin: 0.5rem 0;
-        }
-        #sidebar a.main-section {
-            font-weight: bold;
-        }
-        #sidebar a.sub-section {
-            margin-left: 15px;
-        }
-        #sidebar a:hover {
-            text-decoration: underline;
-        }
-        #content {
-            margin-left: 270px;
-            padding: 2rem;
-            background-color: #f4f4f4;
             overflow-y: auto;
-            flex-grow: 1;
         }
-        #content h1, #content h2 {
+        .sidebar h2 {
+            font-size: 1.2em;
             margin-top: 0;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
         }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 0.5rem;
+        .sidebar ul li {
+            margin-bottom: 10px;
         }
-        th {
-            background-color: #f4f4f4;
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .content h1 {
+            font-size: 2em;
+            margin-top: 0;
+        }
+        .search {
+            margin-bottom: 20px;
+        }
+        .search input {
+            width: calc(100% - 80px);
+            padding: 10px;
+            font-size: 1em;
+            margin-right: 5px;
+        }
+        .search button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section h2 {
+            margin-top: 0;
         }
     </style>
 </head>
 <body>
-    <div id="sidebar">
-        <h2>TTRL Rulebook</h2>
-        <nav>
-            <a href="#general-conduct" class="main-section">General Conduct</a>
-            <a href="#race-night" class="main-section">Race Night and Console Type</a>
-            <a href="#attendance" class="main-section">Attendance</a>
-            <a href="#penalty-system" class="main-section">11.2 Penalty System</a>
-        </nav>
+    <div class="sidebar">
+        <h2>Contents</h2>
+        <ul>
+            <li><a href="#general-conduct">1. General Conduct</a></li>
+            <li><a href="#race-night">2. Race Night and Console Type</a></li>
+            <li><a href="#attendance">3. Attendance</a></li>
+            <li><a href="#qualifying">4. Qualifying</a></li>
+            <li><a href="#break">5. 5-Minute Break</a></li>
+            <li><a href="#racing">6. Racing</a></li>
+            <li><a href="#reserve-drivers">7. Reserve Drivers</a></li>
+            <li><a href="#safety-car">8. Safety Car</a></li>
+            <li><a href="#incident-reporting">9. Incident Reporting</a></li>
+            <li><a href="#fia-appeals">10. FIA Appeals</a></li>
+            <li><a href="#stewards-penalties">11. Stewards Penalties</a></li>
+            <li><a href="#license-points">12. License Point System</a></li>
+        </ul>
     </div>
-    <div id="content">
+
+    <div class="content">
+        <div class="search">
+            <input type="text" id="search" placeholder="Search the rulebook...">
+            <button onclick="searchText()">Search</button>
+        </div>
+        <h1>Torque Titans Racing League (TTRL) Rulebook</h1>
+
         <section id="general-conduct">
-            <h1>General Conduct</h1>
-            <p>Always respect others in the server. Disrespectful behaviors include offensive language, personal attacks, inappropriate content, and racism.</p>
+            <h2>1. General Conduct</h2>
+            <p>1.1 Always respect others in the server...</p>
+            <!-- Add full content here -->
         </section>
+
         <section id="race-night">
-            <h1>Race Night and Console Type</h1>
-            <p>We race crossplay. Drivers must ensure stable connectivity. Repeated poor connections may result in being moved to the reserve list.</p>
+            <h2>2. Race Night and Console Type</h2>
+            <p>We will race crossplay...</p>
+            <!-- Add full content here -->
         </section>
+
         <section id="attendance">
-            <h1>Attendance</h1>
-            <p>Attendance must be marked at least one hour before the race. If a seat becomes available, it will be given to a reserve driver.</p>
+            <h2>3. Attendance</h2>
+            <p>3.1 The cut-off for attendance is 1 hour before the race...</p>
+            <!-- Add full content here -->
         </section>
-        <section id="penalty-system">
-            <h2>11.2 Penalty System</h2>
-            <h3>Penalty System Table</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Offense</th>
-                        <th>Details</th>
-                        <th>Time (sec)</th>
-                        <th>Positions</th>
-                        <th>Penalty Points</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Minor Blocking During Q</td><td>Impeding during hot lap</td><td></td><td></td><td>1</td></tr>
-                    <tr><td>Major Blocking During Q</td><td>Damage and impeding during hot lap</td><td></td><td></td><td>2</td></tr>
-                    <tr><td>Severe Blocking During Q</td><td>DNF caused as a result of blocking</td><td>5</td><td></td><td></td></tr>
-                    <tr><td>Minor Collision During Race</td><td>No damage or loss of position</td><td></td><td></td><td>1</td></tr>
-                    <tr><td>Major Collision During Race</td><td>Damage or loss of position</td><td></td><td></td><td>2</td></tr>
-                    <tr><td>Severe (M) Collision During Race</td><td>Multiple cars causing DNFs</td><td>10</td><td>2</td><td></td></tr>
-                </tbody>
-            </table>
+
+        <section id="qualifying">
+            <h2>4. Qualifying</h2>
+            <p>4.1 During qualifying, you must not use intermediate or wet tires...</p>
+            <!-- Add full content here -->
+        </section>
+
+        <section id="break">
+            <h2>5. 5-Minute Break</h2>
+            <p>5.1 After qualifying or the sprint concludes...</p>
+            <!-- Add full content here -->
+        </section>
+
+        <section id="racing">
+            <h2>6. Racing</h2>
+            <p>6.1 Race starts are usually the most hectic in any form of racing...</p>
+            <!-- Add full content here -->
+        </section>
+
+        <section id="reserve-drivers">
+            <h2>7. Reserve Drivers</h2>
+            <p>7.1 Reserve drivers must have marked attendance...</p>
+            <!-- Add full content here -->
+        </section>
+
+        <section id="safety-car">
+            <h2>8. Safety Car</h2>
+            <p>8.1 Nobody likes to see a safety car...</p>
+            <!-- Add full content here -->
+        </section>
+
+        <section id="incident-reporting">
+            <h2>9. Incident Reporting</h2>
+            <p>9.1 We understand people get annoyed if they DNF...</p>
+            <!-- Add full content here -->
+        </section>
+
+        <section id="fia-appeals">
+            <h2>10. FIA Appeals</h2>
+            <p>10.1 An incident can be appealed to the FIA...</p>
+            <!-- Add full content here -->
+        </section>
+
+        <section id="stewards-penalties">
+            <h2>11. Stewards Penalties</h2>
+            <p>11.1 Penalty System Overview: The time penalties and actions...</p>
+            <!-- Add full content here -->
+        </section>
+
+        <section id="license-points">
+            <h2>12. License Point System</h2>
+            <p>12.1 Stewards will follow a penalty point system...</p>
+            <!-- Add full content here -->
         </section>
     </div>
+
+    <script>
+        function searchText() {
+            const input = document.getElementById('search').value.toLowerCase();
+            const sections = document.querySelectorAll('section');
+
+            sections.forEach(section => {
+                section.style.backgroundColor = '';
+                const text = section.innerText.toLowerCase();
+                if (text.includes(input)) {
+                    section.style.backgroundColor = '#ffffcc';
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        }
+    </script>
 </body>
 </html>
