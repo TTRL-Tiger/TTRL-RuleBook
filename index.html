@@ -1,1 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torque Titans Racing League Rulebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #1f1f1f;
+            padding: 15px;
+            border-right: 1px solid #333;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+        .sidebar h2 {
+            font-size: 1.2em;
+            margin-top: 0;
+            color: #ffffff;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #bbbbbb;
+        }
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .content h1 {
+            font-size: 2em;
+            margin-top: 0;
+            color: #ffffff;
+        }
+        .search {
+            margin-bottom: 20px;
+        }
+        .search input {
+            width: calc(100% - 80px);
+            padding: 10px;
+            font-size: 1em;
+            margin-right: 5px;
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            border: 1px solid #333;
+        }
+        .search button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #333;
+            color: #e0e0e0;
+            border: 1px solid #444;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section h2 {
+            margin-top: 0;
+            color: #ffffff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: #e0e0e0;
+        }
+        td {
+            background-color: #1f1f1f;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Contents</h2>
+        <ul>
+            <li><a href="#general-conduct">1. General Conduct</a></li>
+            <li><a href="#race-night">2. Race Night and Console Type</a></li>
+            <li><a href="#attendance">3. Attendance</a></li>
+            <li><a href="#qualifying">4. Qualifying</a></li>
+            <li><a href="#break">5. 5-Minute Break</a></li>
+            <li><a href="#racing">6. Racing</a></li>
+            <li><a href="#reserve-drivers">7. Reserve Drivers</a></li>
+            <li><a href="#safety-car">8. Safety Car</a></li>
+            <li><a href="#incident-reporting">9. Incident Reporting</a></li>
+            <li><a href="#fia-appeals">10. FIA Appeals</a></li>
+            <li><a href="#stewards-penalties">11. Stewards Penalties</a></li>
+            <li><a href="#license-points">12. License Point System</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="search">
+            <input type="text" id="search" placeholder="Search the rulebook...">
+            <button onclick="searchText()">Search</button>
+        </div>
+        <h1>Torque Titans Racing League (TTRL) Rulebook</h1>
+        <p>Welcome to the Torque Titans Racing League! This rulebook is your comprehensive guide to ensure a fair, fun, and competitive racing experience. By participating in this league, you agree to abide by the following rules and guidelines. Let's make this season unforgettable!</p>
+
+        <section id="general-conduct">
+            <h2>1. General Conduct</h2>
+            <p>1.1 Always respect others in the server. Disrespectful behaviours include using offensive language, making personal attacks, posting inappropriate images or gifs, and any form of racism.</p>
+            <p>1.2 No inappropriate images or gifs.</p>
+            <p>1.3 No arguing over incidents in the chats. All incident discussions must be handled by the stewards through the proper channels.</p>
+            <p>1.4 No clips of incidents in the chat channels.</p>
+            <p>1.5 Nothing racist in the chats, ever!</p>
+            <p>1.6 Remember, we are all here to have fun and enjoy the game, so let's leave any playground behaviour on the shelf.</p>
+        </section>
+
+        <section id="race-night">
+            <h2>2. Race Night and Console Type</h2>
+            <p>We will race crossplay.</p>
+            <p>2.1 Special Rules for Crossplay Races: Crossplay races follow the same rules as regular races. However, drivers must ensure stable connectivity. If a driver is found to have poor connection repeatedly, they may be moved to the reserve list until the issue is resolved.</p>
+            <p>Sunday Nights: 2 tiers, based on pace, 20:00 & 19:45 (UK time). Full Qualifying (if more than 15 drivers) & 50% Race.</p>
+            <p>Wednesday Nights: 20:00 (UK Time) Short Qualifying + 35% & 25% races. The 25% race grid will be the reverse of 35% finishing places.</p>
+        </section>
+
+        <section id="attendance">
+            <h2>3. Attendance</h2>
+            <p>3.1 The cut-off for attendance is 1 hour before the race. The attendance app will not allow drivers to mark or change attendance after this time.</p>
+            <p>3.2 You will not score points in the driver or constructors championship as a reserve.</p>
+            <p>3.3 If a full-time driver misses a check-in for 2 consecutive weeks or marks attendance and doesn't show up to race, they will lose their seat for that race and be given a reserve role.</p>
+        </section>
+
+        <section id="qualifying">
+            <h2>4. Qualifying</h2>
+            <p>4.1 During qualifying, you must not use intermediate or wet tires unless in wet/damp conditions. Anyone seen doing so may be given a penalty by stewards.</p>
+            <p>4.2 No blocking drivers on a flying lap. If someone behind you is faster, stay on your racing line if both drivers are on a flying lap. It is the duty of the driver behind to pass the slower car safely.</p>
+        </section>
+
+        <section id="break">
+            <h2>5. 5-Minute Break</h2>
+            <p>5.1 After qualifying or the sprint concludes, we will wait on the starting grid for 5 minutes before readying up. This break allows drivers to submit urgent incident reports, take a toilet break, or grab a smoke before the race starts.</p>
+            <p>5.2 Readying up early will result in a steward penalty.</p>
+        </section>
+
+        <section id="racing">
+            <h2>6. Racing</h2>
+            <p>6.1 Race starts are usually the most hectic in any form of racing. We ask that all drivers approach the first few corners with caution to avoid early incidents or damage.</p>
+            <p>6.2 Always give space to each driver. Drivers are entitled to space if their front wheel is in line with your rear wheel.</p>
+            <p>6.3 Under no circumstances is it acceptable to dive bomb a driver when overtaking. If you do this and cause damage to the defending driver, you will be punished if they report the clip to the stewards.</p>
+            <p>6.4 No intentional crashing into another driver or attempting to DNF another driver. This could result in a full-season ban and possibly removal from the server.</p>
+            <p>6.5 No continuous swerving on straights if a driver is trying to make a move.</p>
+            <p>6.6 We want hard but clean racing at all times.</p>
+            <p>6.7 Be mindful of other drivers when rejoining the track. Make sure you do so safely.</p>
+            <p>6.8 Resetting to the track is highly prohibited and will result in steward penalties.</p>
+        </section>
+
+        <section id="reserve-drivers">
+            <h2>7. Reserve Drivers</h2>
+            <p>7.1 Reserve drivers must have marked attendance using the reserve driver icon to be invited. Seats will be allocated by staff.</p>
+            <p>7.2 Reserve drivers can qualify.</p>
+            <p>7.3 Reserve drivers do not score points in drivers or constructors championships.</p>
+            <p>7.4 Reserve drivers will be treated like a full-time driver regarding penalties issued by the Stewards.</p>
+        </section>
+
+        <section id="safety-car">
+            <h2>8. Safety Car</h2>
+            <p>8.1 Nobody likes to see a safety car unless you screwed up your first corners and took damage. Safety car restarts cause many problems as drivers are eager to get racing again. Every driver must keep their front tire behind the rear wheel of the driver in front upon race restart until the track goes green.</p>
+            <p>8.2 Please maintain a 2-car gap to the car in front in case they have to slow down to reduce their deltas.</p>
+            <p>8.3 Safety Car AI can be used to have/get a drink, quick toilet break, or add someone back into the game. However, if your AI unfairly gains a position, you should give it back, and if people are seen abusing this, they could receive penalty points (PP). We wouldn't expect anyone to be on AI for more than 1 lap under SC, and you are fully responsible for your AI (due to current issues with tyres warming up, use of AI under SC is strictly prohibited).</p>
+            <p>8.4 There is no overtaking during the safety car unless the car in front goes off track.</p>
+            <p>8.5 To bring the game into line with real F1 'Allowing lapped cars to pass Safety Car,' all drivers are to pay attention and let lapped cars through under the safety car.</p>
+        </section>
+
+        <section id="incident-reporting">
+            <h2>9. Incident Reporting</h2>
+            <p>9.1 We understand people get annoyed if they DNF or take damage during a race; we all do. After qualifying/sprint concludes, we will wait on the starting grid for up to 5 minutes to allow drivers, if they wish, the opportunity to submit any incident reports that need to be urgently dealt with by stewards.</p>
+            <p>9.2 Once the race has been completed, drivers have until 7 pm the following day to submit any reports to the stewards.</p>
+            <p>9.3 All reports/appeals should be submitted to the 💥│incident-report or ❎│fia-appeals, where a ticket will be generated upon completion of the form.</p>
+        </section>
+
+        <section id="fia-appeals">
+            <h2>10. FIA Appeals</h2>
+            <p>10.1 An incident can be appealed to the FIA if you feel the stewards have made the wrong decision.</p>
+            <p>10.2 If you disagree with the steward's decision, DO NOT confront them; appeal using the ❎│fia-appeals channel.</p>
+            <p>10.3 FIA decisions are final.</p>
+        </section>
+
+        <section id="stewards-penalties">
+            <h2>11. Stewards Penalties</h2>
+            <p>11.1 Penalty System Overview: The time penalties and actions listed are guidelines for the stewards. Stewards have the discretion to increase or decrease penalties if deemed appropriate.</p>
+            <p>11.2 Penalty System:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Offense</th>
+                        <th>Details</th>
+                        <th>Time (sec)</th>
+                        <th>Positions</th>
+                        <th>Penalty Points</th>
+                        <th>Warning</th>
+                        <th>DSQ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Minor Blocking During Q</td>
+                        <td>Impeding during hot lap</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>1</td>
+                        <td>✔</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Major Blocking During Q</td>
+                        <td>Damage and impeding during hot lap</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>2</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Severe Blocking During Q</td>
+                        <td>DNF caused as a result of blocking</td>
+                        <td>5</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Minor Collision During Race</td>
+                        <td>No damage or loss of position</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>1</td>
+                        <td>✔</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Major Collision During Race</td>
+                        <td>Damage or loss of position</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>5</td>
+                        <td>✔</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Severe Collision During Race</td>
+                        <td>Incident involving multiple cars causing DNF</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Intentional Crash</td>
+                        <td>Deliberately taking out another driver</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>Season Ban</td>
+                    </tr>
+                    <tr>
+                        <td>Unsafe Re-entry</td>
+                        <td>Unsafe return to track causing an incident</td>
+                        <td>5</td>
+                        <td>-</td>
+                        <td>2</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Failure to Yield to Blue Flags</td>
+                        <td>Not allowing faster cars to pass</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>1</td>
+                        <td>✔</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Resetting to Track</td>
+                        <td>Using reset feature during race</td>
+                        <td>10</td>
+                        <td>-</td>
+                        <td>2</td>
+                        <td>-</td>
+                        <td>DSQ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="license-points">
+            <h2>12. License Point System</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Points</th>
+                        <th>Penalty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3</td>
+                        <td>Time penalty for the next driver's race (5 seconds)</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Position drop for the next driver's race (3 positions)</td
 
